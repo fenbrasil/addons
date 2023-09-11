@@ -21,6 +21,11 @@ jobs:
         remote-port: ${{ secrets.ftp_port }}
         remote-user: ${{ secrets.ftp_user }}
         remote-password: ${{ secrets.ftp_password }}
-        webhook:  ${{ secrets.webhook_url }}
         local-path: "/addons/"
         remote-path: "/garrysmod/addons/"
+        sync-delta-excludes: |
+          .gitignore
+          .gitmodules
+          .github
+          README.md
+        webhook:  ${{ secrets.webhook_url }}

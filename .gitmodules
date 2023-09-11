@@ -1,6 +1,6 @@
 [submodule "ttt_detective_golden_gun"]
-	path = addons/ttt_detective_golden_gun
+	path = ttt_detective_golden_gun
 	url = https://github.com/fenbrasil/ttt_detective_golden_gun
 [submodule "ttt_last_innocent_standing"]
-	path = addons/ttt_last_innocent_standing
+	path = ttt_last_innocent_standing
 	url = https://github.com/fenbrasil/ttt_last_innocent_standing
