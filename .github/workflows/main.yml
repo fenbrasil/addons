@@ -1,0 +1,26 @@
+on: 
+  push:
+    branches: [master]
+    
+name: sync ftp files
+jobs:
+  web-deploy:
+    name: git file sync on branch update
+    runs-on: ubuntu-latest
+    steps:
+    - name: fetch latest files
+      uses: actions/checkout@v3
+      with:
+          fetch-depth: 0
+    
+    - name: send latest files
+      uses: milanmk/actions-file-deployer@master
+      with:
+        remote-protocol: "sftp"
+        remote-host: ${{ secrets.ftp_server }}
+        remote-port: ${{ secrets.ftp_port }}
+        remote-user: ${{ secrets.ftp_user }}
+        remote-password: ${{ secrets.ftp_password }}
+        webhook:  ${{ secrets.webhook_url }}
+        local-path: "/addons/"
+        remote-path: "/garrysmod/addons/"
