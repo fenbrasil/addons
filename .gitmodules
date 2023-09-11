@@ -4,3 +4,6 @@
 [submodule "ttt_last_innocent_standing"]
 	path = ttt_last_innocent_standing
 	url = https://github.com/fenbrasil/ttt_last_innocent_standing
+[submodule "ttt_solid_map_vote"]
+	path = ttt_solid_map_vote
+	url = https://github.com/fenbrasil/ttt_solid_map_vote
