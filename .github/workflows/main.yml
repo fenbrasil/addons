@@ -21,7 +21,7 @@ jobs:
         remote-port: ${{ secrets.ftp_port }}
         remote-user: ${{ secrets.ftp_user }}
         remote-password: ${{ secrets.ftp_password }}
-        local-path: "/addons/"
+        local-path: "./"
         remote-path: "/garrysmod/addons/"
         sync-delta-excludes: |
           .gitignore
