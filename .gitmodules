@@ -7,3 +7,6 @@
 [submodule "ttt_solid_map_vote"]
 	path = ttt_solid_map_vote
 	url = https://github.com/fenbrasil/ttt_solid_map_vote
+[submodule "ttt_weapons_manager"]
+	path = ttt_weapons_manager
+	url = https://github.com/r47orr/ttt_weapons_manager
